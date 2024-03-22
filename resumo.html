@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="src/styles/style2.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/images/">
+    <link rel="stylesheet" href="src/javascript/script2.js">
+</head>
+
+<body>
+    <div class="header">
+        <p class="logo">Cardapio</p>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head">
+                <p>Seu carrinho</p>
+            </div>
+            <div id="cartItem">Seu carrinho está vazio </div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">R$ 0.00</h2>
+
+            </div>
+
+            <button id="finalizarCompraBtn">Finalizar Compra</button>
+
+            <script>
+
+                const finalizarCompraBtn = document.getElementById('finalizarCompraBtn');
+
+
+                finalizarCompraBtn.addEventListener('click', function  () {
+
+                    
+                    location.href = "pagamento.html"
+                });
+            </script>
+
+            </h3>
+
+        </div>
+    </div>
+    <script src="src/javascript/script2.js"></script>
+</body>
+</html>

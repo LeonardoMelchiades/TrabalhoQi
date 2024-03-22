@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/testimonials.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="index" href="login.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>CardapioDigital</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default"onclick="resumoCompra()">
+                Peça aqui
+            </button>
+
+
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+
+
+
+
+
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Inovação no prato, tradição no sabor.
+
+                </h1>
+
+                <p class="description">
+                    "Adentre nosso restaurante e mergulhe em uma atmosfera onde cada detalhe é cuidadosamente planejado
+                    para oferecer uma experiência gastronômica única. Desde a decoração acolhedora até a equipe calorosa
+                    que o recebe, cada elemento é pensado para proporcionar momentos memoráveis".
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 995673256
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/hero.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/dish.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Poke Mirokumai
+                    </h3>
+
+                    <span class="dish-description">
+                        Cada tigela é cuidadosamente montada com uma base de arroz ou salada fresca, coberta com uma
+                        variedade de ingredientes frescos e saborosos, como salmão fresco, atum picante, abacate
+                        cremoso, pepino crocante e muito mais.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$35,00</h4>
+                        <button class="btn-default"  onclick="resumoCompra()"> 
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        
+                    </button>
+
+
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/dish2.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Sanduiche
+                    </h3>
+
+                    <span class="dish-description">
+                        O sanduíche do nosso restaurante é mais do que uma simples refeição - é uma experiência de sabor
+                        que vai encantar os seus sentidos. Começamos com pães frescos e macios, cuidadosamente
+                        selecionados para proporcionar a base perfeita para cada mordida. Em seguida, recheamos com uma
+                        variedade de ingredientes frescos e saborosos, como carnes suculentas, queijos derretidos,
+                        vegetais crocantes e molhos artesanais
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price" onclick="resumoCompra()">
+                        <h4>R$15,00</h4> 
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/dish3.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Salada de Fruta
+                    </h3>
+
+                    <span class="dish-description">
+                        Nossa salada de frutas é uma sinfonia de frescor e doçura, perfeita para refrescar seu paladar
+                        em qualquer dia ensolarado. Cada pedaço é cuidadosamente cortado à mão e selecionado entre uma
+                        variedade de frutas da estação, garantindo a máxima qualidade e sabor em cada garfada
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price" onclick="resumoCompra()">
+                        <h4>R$10,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/dish4.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Macarrão
+                    </h3>
+
+                    <span class="dish-description">
+                        "Nosso macarrão é uma obra-prima da simplicidade e do sabor. Preparado com a mais alta qualidade
+                        de ingredientes e uma dose generosa de amor e dedicação, cada prato é uma celebração da tradição
+                        italiana. Nossa massa fresca é cuidadosamente preparada à mão, garantindo uma textura
+                        perfeitamente al dente que envolve cada garfada em conforto e satisfação
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price" onclick="resumoCompra()">
+                        <h4>R$30,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/chef (1).png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Cleber
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Adorei a experiência no restaurante! O macarrão que pedi estava simplesmente divino. A
+                                massa estava no ponto perfeito, firme e bem cozida, e o molho tinha um sabor incrível,
+                                cheio de aromas e texturas. Além disso, o atendimento foi excepcional, a equipe foi
+                                muito atenciosa e prestativa. Com certeza voltarei em breve para experimentar mais
+                                pratos dessa cozinha maravilhosa!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Ruan
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Uau! O macarrão que experimentei neste restaurante foi simplesmente espetacular! A
+                                massa estava incrivelmente fresca e bem preparada, e o molho tinha um equilíbrio
+                                perfeito de sabores."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
